@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
         //Rotates car based on input
         transform.Rotate(Vector3.up ,turnSpeed * horizontalInput *Time.deltaTime);
 
-        if(forwardInput.GetKeyDown(switchKey))
+        if(Input.GetKeyDown(switchKey))
         {
             mainCamera.enabled = !mainCamera.enabled;
             hoodCamera.enabled = !hoodCamera.enabled;
